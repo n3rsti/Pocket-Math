@@ -4,4 +4,4 @@ App is currently availible only in polish language. English will be added soon.
 
 ## Podręczna matematyka [PL]
 
-Status: W trakcie pracy
+* Status: W trakcie pracy
