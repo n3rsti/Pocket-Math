@@ -182,7 +182,7 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-.content img {
+.content .img {
     width: 60%;
     margin-top: 20%;
 }
@@ -209,4 +209,21 @@ h3 {
     height: 10px;
     background: #61c0bc;
     border: 0;
+    margin: 5%;
+}
+.content ol {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.content a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.second-img {
+    width: 70%;
+    margin-bottom: 5%;
+}
+.opis {
+    margin-bottom: 5%;
 }
