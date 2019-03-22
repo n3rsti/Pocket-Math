@@ -8,7 +8,7 @@ function pSquare(a){
 function lSquare(a){ // Square, Rhombus
     return 4 * a;
 };
-function dSquare(a){
+function dSquare(a){ // Square
     return a + pierwiastek2;
 };
 function pCircle(r){
@@ -51,4 +51,43 @@ function hEqTriangle(a){
     return a / 2 + pierwiastek3;
 };
 
-
+// Spatial figures
+function vCone(r, H){
+    return Math.pow(r, 2) * H / 3 + pi;
+};
+function pCone(r, l){
+    return Math.pow(r, 2) + r * l + pi;
+};
+function pCube(a){
+    return 6 * Math.pow(a, 2);
+};
+function vCube(a){
+    return Math.pow(a, 3);
+};
+function dCube(a){
+    return a + pierwiastek3;
+};
+function pCuboid(a, b, c){
+    return 2 * (a * b) + 2 * (a * c) + 2 * (b * c);
+}
+function vCuboid(a, b, c){
+    return a * b * c;
+};
+function vCylinder(r, H){
+    return Math.pow(r, 2) * H + pi;
+};
+function pCylinder(r, H){
+    return 2 * Math.pow(r, 2) + 2 * r * H + pi;
+};
+function vSphere(r){
+    return 4 / 3 * Math.pow(r, 3) + pi;
+};
+function pSphere(r){
+    return 4 * Math.pow(r, 2) + pi;
+};
+function vSquarePyramid(Pp, H){
+    return (Pp * H) / 3;
+};
+function pSquarePyramid(Pp, Pb){
+    return Pp + Pb;
+};
