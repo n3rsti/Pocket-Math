@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 * {
     box-sizing: border-box;
 }
@@ -239,6 +240,32 @@ h3 {
     background: #2c3e50;
     z-index: 9999;
     display: none;
+}
+.input {
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #61c0bc;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.button {
+    width: 100px;
+    height: 40px;
+    margin: 5% 0 0 0;
+    border: 0;
+    border-radius: 10px;
+    background: #61c0bc;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+.wynik{
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 @media (orientation: landscape), (min-width: 500px){
     .media {

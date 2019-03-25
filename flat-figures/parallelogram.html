@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../app.js"></script>
     <link rel="stylesheet" href="../style.css">
     <title>Równoległobok</title>
 </head>
@@ -41,7 +42,34 @@
         <span>L = 2a + 2b</span>
         <b>Kąty</b>
         <i class="opis">Suma kątów jednego boku jest zawsze równa 180°</i>
+        <br><br>
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <h3>Pole</h3>
+        <input type="number" class="input" id="a" placeholder="Bok"><br>
+        <input type="number" class="input" id="h" placeholder="Wysokość">
+        <button class="button" onclick="wynikP()">Oblicz</button>
+        <p id="wynikP" class="wynik">Pole: </p>
+        <br>
+        <h3>Obwód</h3>
+        <input type="number" id="a2" class="input" placeholder="Bok 1"><br>
+        <input type="number" id="b" class="input" placeholder="Bok 2">
+        <button class="button" onclick="wynikL()">Oblicz</button>
+        <p id="wynikL" class="wynik">Obwód: </p>
 
     </div>
+    <script>
+        function wynikP(){
+            var a = document.getElementById("a").value;
+            var h = document.getElementById("h").value;
+            document.getElementById("wynikP").innerHTML = "Pole: " + pParral(a, h);
+        };
+        function wynikL(){
+            var a = document.getElementById("a2").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("wynikL").innerHTML = "Obwód: " + lKite(a, b);
+        };
+    </script>
 </body>
 </html>

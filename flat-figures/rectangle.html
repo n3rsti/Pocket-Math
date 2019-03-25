@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../app.js"></script>
     <title>Prostokąt</title>
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -44,8 +45,26 @@
         <br>
         <br>
         <br>
-    </div>
 
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <input type="number" class="input" id="a" placeholder="Bok 1">
+        <br>
+        <input type="number" class="input" id="b" placeholder="Bok 2">
+        <button class="button" onclick="wynik()">Oblicz</button>
+        <p id="wynikP" class="wynik">Pole: </p>
+        <p id="wynikL" class="wynik">Obwód: </p>
+
+    </div>
+    <script>
+        function wynik(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("wynikP").innerHTML = "Pole: " + pRectangle(a, b);
+            document.getElementById("wynikL").innerHTML = "Obwód: " + lKite(a, b);
+        };
+    </script>
 </body>
 
 </html>

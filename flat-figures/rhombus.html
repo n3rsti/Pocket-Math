@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style.css">
+    <script src="../app.js"></script>
     <title>Romb</title>
 </head>
 <body>
@@ -39,6 +40,31 @@
         <span>L = 4a</span>
         <b>Kąty</b>
         <i class="opis">Suma kątów jednego boku jest zawsze równa 180°</i>
+        <br><br>
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <h3>Pole</h3>
+        <input type="number" class="input" id="a" placeholder="Bok"><br>
+        <input type="number" class="input" id="h" placeholder="Wysokość">
+        <button class="button" onclick="wynikP()">Oblicz</button>
+        <p id="wynikP" class="wynik">Pole: </p>
+        <br><br>
+        <h3>Obwód</h3>
+        <input type="number" class="input" id="a2" placeholder="Bok">
+        <button class="button" onclick="wynikL()">Oblicz</button>
+        <p id="wynikL" class="wynik">Obwód: </p>
     </div>
+    <script>
+        function wynikP(){
+            var a = document.getElementById("a").value;
+            var h = document.getElementById("h").value;
+            document.getElementById("wynikP").innerHTML = "Pole: " + pParral(a, h);
+        };
+        function wynikL(){
+            var a = document.getElementById("a2").value;
+            document.getElementById("wynikL").innerHTML ="Obwód:" + lSquare(a);
+        };
+    </script>
 </body>
 </html>

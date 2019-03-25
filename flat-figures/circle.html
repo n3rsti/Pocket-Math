@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../app.js"></script>
     <link rel="stylesheet" href="../style.css">
     <title>Koło</title>
 </head>
@@ -46,7 +47,26 @@
         <span>(α / 360) * 2πr</span>
         <br>
         <i class="opis">Gdzie <b>α</b> to kąt środkowy koła </i>
-    </div>
-</body>
+        <br><br>
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <b>Pole</b>
+        <input class="input" type="number" id="r" autocomplete="off" placeholder="Promień">
+        <button class="button" onclick="wynik()">Oblicz</button>
+        <p id="wynikP" class="wynik">Pole: </p>
+        <p id="wynikL" class="wynik">Obwód: </p>
+        <br>
+        <br>
+        <br>
 
+    </div>
+    <script>
+    function wynik(){
+        var r = document.getElementById("r").value;
+        document.getElementById("wynikL").innerHTML = "Obwód: " + lCircle(r);
+        document.getElementById("wynikP").innerHTML = "Pole: " + pCircle(r);
+    };
+    </script>
+</body>
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../app.js"></script>
     <link rel="stylesheet" href="../style.css">
     <title>Sześciokąt</title>
 </head>
@@ -52,8 +53,24 @@
         <br>
         <br>
         <span>Y = 2a</span>
-        <br><br>
+        <br><br><hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <input type="number" class="input" placeholder="Bok" id="a">
+        <button class="button" onclick="wynik()">Oblicz</button>
+        <p id="wynikL" class="wynik">Obwód:</p>
+        <p id="wynikP" class="wynik">Pole: </p>
+        <br>
+        <br>
+        <br>
     </div>
+    <script>
+        function wynik(){
+            var a = document.getElementById("a").value;
+            document.getElementById("wynikL").innerHTML = "Obwód: " + lHexagon(a);
+            document.getElementById("wynikP").innerHTML = "Pole: " + pHexagon(a);
+        };
+    </script>
 </body>
 
 </html>
