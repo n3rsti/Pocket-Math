@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../app.js"></script>
     <link rel="stylesheet" href="../style.css">
     <title>Trapez</title>
 </head>
@@ -41,7 +42,24 @@
         <br><br>
         <b>Kąty</b>
         <span>Suma kątów przy ramieniu jest zawsze równa 180°</span>
+        <br><br>
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <input type="number" class="input" id="a" placeholder="Bok 1"><br>
+        <input type="number" class="input" id="b" placeholder="Bok 2"><br>
+        <input type="number" class="input" id="h" placeholder="Wysokość">
+        <button class="button" onclick="wynik()">Oblicz</button>
+        <p id="wynik" class="wynik">Pole: </p>
     </div>
+    <script>
+        function wynik(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var h = document.getElementById("h").value;
+            document.getElementById("wynik").innerHTML = "Pole: " + pTrapezoid(a, b, h);
+        };
+    </script>
 </body>
 
 </html>

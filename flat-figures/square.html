@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kwadrat</title>
+    <script src="../app.js"></script>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -43,8 +44,21 @@
         <br>
         <br>
         <br>
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <input type="number" class="input" id="a" placeholder="Bok">
+        <button class="button" onclick="wynik()">Oblicz</button>
+        <p id="wynikP" class="wynik">Pole: </p>
+        <p id="wynikL" class="wynik">Obwód: </p>
     </div>
-
+<script>
+    function wynik(){
+        var a = document.getElementById("a").value;
+        document.getElementById("wynikP").innerHTML = "Pole: " + pSquare(a);
+        document.getElementById("wynikL").innerHTML = "Obwód: " + lSquare(a);
+    };
+</script>
 </body>
 
 </html>

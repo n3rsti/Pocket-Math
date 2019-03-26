@@ -39,7 +39,7 @@ function dRectangle(a, b){ // Rectangle, Triangle
     return pierwiastek + parseInt(Math.pow(a, 2) + Math.pow(b, 2));
 };
 function pTrapezoid(a, b, h){
-    return (a + b) * h / 2;
+    return (parseInt(a) + parseInt(b)) * h / 2;
 };
 function pTriangle(a, h){
     return a * h / 2;
@@ -91,3 +91,4 @@ function vSquarePyramid(Pp, H){
 function pSquarePyramid(Pp, Pb){
     return Pp + Pb;
 };
+console.log(4 * "a");
