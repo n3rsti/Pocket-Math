@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style.css">
+    <script src="../app.js"></script>
     <title>Prostopadłościan</title>
 </head>
 
@@ -39,7 +40,26 @@
         <span>V = Pp * H</span>
         <span>V = a * b * c</span>
         <i class="opis">Gdzie <b>a</b>, <b>b</b> i <b>c</b> to długości krawędzi w prostopadłościanie.</i>
+        <br><br>
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <input type="number" class="input" id="a" placeholder="Bok 1"><br>
+        <input type="number" class="input" id="b" placeholder="Bok 2"><br>
+        <input type="number" class="input" id="c" placeholder="Bok 3">
+        <button class="button" onclick="wynik()">Oblicz</button>
+        <p id="wynikV" class="wynik">Objętość:</p>
+        <p id="wynikP" class="wynik">Pole: </p>
     </div>
+    <script>
+        function wynik (){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var c = document.getElementById("c").value;
+            document.getElementById("wynikV").innerHTML = "Objętość: " + vCuboid(a, b, c);
+            document.getElementById("wynikP").innerHTML = "Pole: " + pCuboid(a, b, c);
+        }
+    </script>
 </body>
 
 </html>

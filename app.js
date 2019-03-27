@@ -91,4 +91,21 @@ function vSquarePyramid(Pp, H){
 function pSquarePyramid(Pp, Pb){
     return Pp + Pb;
 };
-console.log(4 * "a");
+
+/* 
+
+    \_________/
+    /         \
+    |  O   O  |
+    |    \    | Coded by Krzysztof Witucki
+    |  \____/ |
+    \_________/ github.com/n3rsti
+
+
+       |\   |
+       | \  |
+       |  \ |
+       |   \|
+
+
+*/
