@@ -59,7 +59,7 @@ nav label {
     display: flex;
     flex-direction: column;
     width: 32px;
-    height: 60%;
+    height: 32px;
     margin-left: 3%;
     justify-content: center;
     position: relative;
@@ -133,7 +133,7 @@ input:checked ~ .menu {
 
 .header .figure {
     width: 100%;
-    height: 50vw;
+    height: 100%;
     border: 1px solid #61c0bc;
     margin: 0;
     display: flex;
@@ -267,7 +267,7 @@ h3 {
     font-weight: 700;
     font-size: 1.8rem;
 }
-@media (orientation: landscape), (min-width: 500px){
+/* @media (orientation: landscape), (min-width: 500px){
     .media {
         display: flex;
         flex-direction: column;
@@ -276,5 +276,101 @@ h3 {
         color: white;
         font-size: 40px;
         text-align: center;
+    }
+} */
+@media(min-width: 420px){
+    html {
+        font-size: 12px;
+    }
+    nav {
+        height: 70px;
+    }
+    .figures {
+        margin-top: 80px;
+    }
+    nav label {
+        transform: scale(1.2);
+    }
+    .button {
+        width: 150px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    .input {
+        width: 240px;
+        height: 60px;
+    }
+    .content hr {
+        margin: 2%;
+    }
+}
+@media(min-width: 500px){
+    html {
+        font-size: 13px;
+    }
+    .menu {
+        height: 120px;
+    }
+}
+@media(min-width: 650px){
+    .content span {
+        align-self: center;
+        margin: 6%;
+    }
+}
+@media(min-width: 800px){
+    .header a {
+        width: calc(100% / 3);
+        height: calc(100vw / 3);
+    }
+    .content .img {
+        width: 40%;
+    }
+}
+@media(min-width: 1000px){
+    .content span {
+        font-size: 2.2rem;
+        margin: 3%;
+    }
+    .input {
+        width: 270px;
+        height: 80px;
+        margin-top: 2%;
+    }
+    .button {
+        width: 240px;
+        height: 70px;
+    }
+    .content h3 {
+        font-size: 2.3rem;
+    }
+    .wynik {
+        font-size: 2.1rem;
+    }
+    .content b {
+        font-size: 2.2rem;
+        margin-bottom: 2%;
+    }
+    .opis {
+        text-align: center;
+        margin-bottom : 2%;
+    }
+    .content .img {
+        margin-top: 5%;
+    }
+    .content hr {
+        margin: 0;
+    }
+}
+@media(min-width: 1300px){
+    .header a {
+        width: calc(100% / 4);
+        height: calc(100vw / 4);
+    }
+}
+@media(min-width: 1500px){
+    .header a {
+        width: calc(100% / 6);
+        height: calc(100vw / 6);
     }
 }
