@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style.css">
+    <script src="../app.js"></script>
     <title>Walec</title>
 </head>
 
@@ -39,7 +40,25 @@
         <b>Pole całkowite</b>
         <span>Pc = 2πr² + 2πr * H</span>
         <i class="opis">Gdzie <b>r</b> oznacza długość przekątnej podstawy</i>
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <input type="number" class="input" id="r" placeholder="Promień"><br>
+        <input type="number" class="input" id="h" placeholder="Wysokość">
+        <button class="button" onclick="wynik()">Oblicz</button>
+        <p id="wynikV" class="wynik">Objętość: </p>
+        <p id="wynikP" class="wynik">Pole: </p>
+
+
     </div>
+    <script>
+        function wynik(){
+            var r = document.getElementById("r").value;
+            var h = document.getElementById("h").value;
+            document.getElementById("wynikV").innerHTML = "Objętość: " + vCylinder(r, h);
+            document.getElementById("wynikP").innerHTML = "Pole: " + pCylinder(r, h);
+        };
+    </script>
 </body>
 
 </html>

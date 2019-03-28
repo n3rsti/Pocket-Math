@@ -85,8 +85,8 @@ function vSphere(r){
 function pSphere(r){
     return 4 * Math.pow(r, 2) + pi;
 };
-function vSquarePyramid(Pp, H){
-    return (Pp * H) / 3;
+function vSquarePyramid(r, H){
+    return Math.pow(r, 2) * H / 3 + pi;
 };
 function pSquarePyramid(Pp, Pb){
     return Pp + Pb;

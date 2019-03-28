@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style.css">
+    <script src="../app.js"></script>
     <title>Ostrosłup</title>
 </head>
 
@@ -39,7 +40,21 @@
         <span>V = (Pp * H) / 3</span>
         <b>Pole całkowite</b>
         <span>Pc = Pp + Pb</span>
+        <hr>
+        <h3>Kalkulator</h3>
+        <hr>
+        <input type="number" class="input" id="r" placeholder="Promień"><br>
+        <input type="number" class="input" id="h" placeholder="Wysokość">
+        <button class="button" onclick="wynik()">Oblicz</button>
+        <p id="wynik" class="wynik">Objętość</p>
     </div>
+    <script>
+        function wynik(){
+            var r = document.getElementById("r").value;
+            var h = document.getElementById("h").value;
+            document.getElementById("wynik").innerHTML = "Objętość: " + vSquarePyramid(r, h);
+        }
+    </script>
 </body>
 
 </html>
