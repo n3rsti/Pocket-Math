@@ -7,7 +7,3 @@ App is currently availible only in polish language. English will be added soon.
 
 * Status: Polska wersja gotowa!
 ### [Live](https://n3rsti.github.io/Pocket-Math/)
-
-[x] Wersja mobilna
-
-[x] Wersja desktopowa
