@@ -9,4 +9,5 @@ App is currently availible only in polish language. English will be added soon.
 ### [Live](https://n3rsti.github.io/Pocket-Math/)
 
 [x] Wersja mobilna
+
 [x] Wersja desktopowa
