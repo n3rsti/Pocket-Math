@@ -5,6 +5,8 @@ App is currently availible only in polish language. English will be added soon.
 
 ## Podręczna matematyka [PL]
 
-* Status: W trakcie pracy nad większymi ekranami
+* Status: Polska wersja gotowa!
+### [Live](https://n3rsti.github.io/Pocket-Math/)
 
 [x] Wersja mobilna
+[x] Wersja desktopowa
